@@ -1,7 +1,15 @@
 ---
 layout: home
-title: "Modis"
+title: "Home"
 ---
+# Welcome to ModisWorks
+
+ModisWorks is the home of Modis, a highly modular Python Discord bot designed to be easily privately hosted by anyone. At ModisWorks, we have three primary goals that we hope to achieve with Modis:
+
+1. Create a Discord bot that is simple enough to host so that someone with no experience in server administration can host it on their own.
+2. Create a Discord bot that is simple enough to develop for so that someone with no experience in software development can learn to write a simple module.
+3. Create an easy to understand but highly functional platform for developers of all levels to learn and develop their programming skill on something that has real-world applications.
+
 ## Getting started
 
 To get started hosting your own version of Modis, check out the [Setup](./doc/guides/setup.md) guide.
