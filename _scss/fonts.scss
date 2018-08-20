@@ -16,6 +16,19 @@
     font-weight: 400;
 }
 
+@mixin font-blurb {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: lighten( #000, 25% )
+}
+
+@mixin font-blurb-bullet {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: lighten( #000, 25% )
+}
+
 @mixin font-heading {
     margin-left: -0.07em;
 
