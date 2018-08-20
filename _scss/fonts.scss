@@ -12,12 +12,12 @@
 @mixin font-subtitle {
     /*text-transform: lowercase;*/
 
-    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
 
 @mixin font-blurb {
-    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-color: lighten( $text-color, 40% );
     font-weight: 300;
 }
