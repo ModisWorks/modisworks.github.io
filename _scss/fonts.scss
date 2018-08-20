@@ -17,17 +17,13 @@
 }
 
 .font-blurb {
-    margin-top: 1em;
-    
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 3rem;
     font-weight: 300;
     color: lighten( $text-color, 25% )
 }
 
 .font-blurb-bullet {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
     font-weight: 300;
     color: lighten( $text-color, 25% )
 }
