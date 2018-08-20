@@ -82,7 +82,6 @@ iframe {
 .blurb {
     margin: 5em 2em;
     
-    font-weight: 300;
-    color: lighten( $text-color, 40% );
+    @include font-blurb;
     text-align: center;
 }
