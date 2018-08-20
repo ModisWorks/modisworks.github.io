@@ -78,3 +78,9 @@ iframe {
         height: calc(100% + #{$yt-border-width * 2});
     }
 }
+
+.blurb {
+    font-weight: 300;
+    color: lighten( $text-color, 50% )
+    text-align: center;
+}
