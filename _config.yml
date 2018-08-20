@@ -9,10 +9,10 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: modis
-description: An open-sauce, modular Discord bot
-repository: Infraxion/modis
-github_username: Infraxion
+title: ModisWorks
+description: home of Modis, a highly modular Python Discord bot designed to be easily privately hosted by anyone.
+repository: ModisWorks/modisworks.github.io
+github_username: ModisWorks
 
 # Build settings
 markdown: kramdown
