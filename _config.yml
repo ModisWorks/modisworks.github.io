@@ -10,7 +10,7 @@
 
 # Site settings
 title: ModisWorks
-description: home of Modis, a highly modular Python Discord bot designed to be easily privately hosted by anyone.
+description: home of the modis discord bot\ncustomise for your server | self-host for privacy | easily write your own modules
 repository: ModisWorks/modisworks.github.io
 github_username: ModisWorks
 
