@@ -10,7 +10,7 @@ Get Modis running on your own machine.
 
 - [**Modis Quickstart**](./guides/quickstart.md) - Portable version of Modis, currently **Windows only**
 - [Modis Manual Installation](./guides/manualinstall.md) - Works on any OS, recommended if you are planning on writing your own modules
-- Getting API Keys
+- [Getting API Keys](./guides/api-keys.md)
   - [Discord](./guides/apikeys/discord.md) - Create a bot account for Modis to run on
   - [Google](./guides/apikeys/google.md) - Required for `music` module search and YouTube playback
   - [Reddit](./guides/apikeys/reddit.md) - Required for `reddit` module
