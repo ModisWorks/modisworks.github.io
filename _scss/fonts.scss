@@ -16,11 +16,6 @@
     font-weight: 400;
 }
 
-.font-blurb {
-    font-weight: 300;
-    color: lighten( $text-color, 50% )
-}
-
 @mixin font-heading {
     margin-left: -0.07em;
 
