@@ -22,6 +22,7 @@ Get Modis running on your own machine.
 
 Learn how to make your own module for Modis.
 
-- [Ping Pong Module](./guides/dev/ping-pong.md) - Simple enough for anyone to get started with, no experience required
-- [Introduction to embed interfaces](./guides/dev/embedui.md) - Get nice-looking interfaces to display information in Discord text channels
-- [Introduction to console interfaces](./guides/dev/consoleui.md) - Learn how to create a bot console interface for your module
+- [Ping Pong Module](./guides/dev/pingpong.md) - Simple enough for anyone to get started with, no experience required
+- [The Internal Commands API](./guides/dev/api-commands.md) - Learn about Modis' internal API that greatly streamlines the way your module handles commands.
+- [Introduction to embed interfaces](./guides/dev/ui-embed.md) - Get nice-looking interfaces to display information in Discord text channels
+- [Introduction to console interfaces](./guides/dev/ui-console.md) - Learn how to create a bot console interface for your module
