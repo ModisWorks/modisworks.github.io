@@ -10,28 +10,48 @@ With the internal commands API, you don't need to worry about implementing parsi
 
 Just like a header file, `__info.py` defines what methods your module is able to execute (commands), what variables it can take (auxiliary arguments), and what variables and constants it stores (database structure).
 
-The internal commands API uses the `__info.py` file to add your module's commands to the list against which it will check each message received from Discord.
+The internal commands API uses the `__info.py` file to add your module's commands to the list against which it will check each message received from Discord. The API will then call the `on_command.py` event handler in your module.
 
+### Registering root commands
+[text here]
+
+### Receiving root commands
 [text here]
 
 ## Auxiliary arguments
 
 [text here]
 
+### Registering aux arguments
+[text here]
+
+### Receiving aux arguments
+[text here]
+
 ## Permissions
 
 [text here]
 
-Below is a table of a command's permission integer vs who is allowed to access that command:
+### Registering default permissions
+[text here]
+
+### Permission integer definitions
+Below is a table detailing how the permission integer affects the accessibility of that command:
 
 Integer | Accessible by
----: | :---
-`-1` |  @everyone
-`0` | Server owner only
-`1` | Server owner + highest role
-`2` | Server owner + 2nd hightest role and above
-`3` | Server owner + 3rd highest role and above
+   ---: | :---
+   `-1` | @everyone
+    `0` | Server owner only
+    `1` | Server owner + highest role
+    `2` | Server owner + 2nd hightest role and above
+    `3` | Server owner + 3rd highest role and above
+   `4+` | etc.
 
-and so on.
+## Upcoming features
 
-[text here]
+We're always looking to improve Modis, and we have a couple things lined up for the commands API in the future:
+
+* Auto-deleting of commands - specify for your module whether you want a command message to be auto-deleted once it's sent to keep the text channel clean, like the music module does.
+    * The manager module will have functionality that lets you turn this on and off for modules through commands.
+    * In the future we may add the ability to specify the option per-command and per-aux, in a similar fashion to permissions.
+* Emoji button support like the music module; this would get a little more complex as we would need to work out the process involved in letting your module ask to have buttons created on a specific message. Join our [Discord](z83UGvK) to stay updated or suggest something!
