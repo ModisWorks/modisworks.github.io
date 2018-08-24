@@ -48,7 +48,7 @@ Below is a table detailing how the permission integer affects the accessibility 
 |    `4+` | etc.                                       |
 
 #### Permission strings
-Below is a list of all the permission strings you can use to define what Discord permissin a user needs to have to use a command:
+Below is a list of all the permission strings you can use to define what Discord permission a user needs to have to use a command:
 
 | General Permissions     | Text Permissions       | Voice Permissions      |
 | :---------------------- | :--------------------- | :--------------------- |
