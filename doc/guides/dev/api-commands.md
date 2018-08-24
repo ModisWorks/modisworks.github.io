@@ -1,7 +1,5 @@
 # The Internal Commands API
 
-## Overview
-
 Modis' internal commands API is designed to streamline the module code by collating the handling of bot commands into one central module (`!core`), which then distributes the commands to their respective modules.
 
 With the internal commands API, you don't need to worry about implementing parsing, permissions, or auxiliary arguments into your code. You only need to define what commands and arguments your module can receive (and their default permission levels if you want) in the `__info.py` file, which acts like a header file of sorts for your module. Then, you can use an `on_command.py` event handler the same way you would use any of the discord.py event handlers.
