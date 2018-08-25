@@ -20,7 +20,7 @@ After completing this you will know how to:
 
 Modis looks in the `modis\discord-modis\modules\` folder for Discord modules. To start making our module, make a new folder there called `pingpong`.
 
-![Module folder structure](https://github.com/Infraxion/modis/raw/gh-pages/doc/guides/img/pingpongfolder.png?raw=true "Module folder structure")
+![Module folder structure](/doc/guides/img/pingpongfolder.png "Module folder structure")
 
 ## Listening for messages
 
