@@ -3,7 +3,6 @@
 // Update html to include these fonts when adding new fonts
 @mixin font-title {
     /*text-transform: lowercase;*/
-
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
     font-size: 6rem;
     font-weight: 400;
@@ -11,15 +10,22 @@
 
 @mixin font-subtitle {
     /*text-transform: lowercase;*/
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+@mixin font-blurb-title {
+    color: transparentize($text-color, 0.2);
 
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
 
-@mixin font-blurb {
+@mixin font-blurb-text {
+    color: transparentize($text-color, 0.2);
+
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-color: lighten( $text-color, 40% );
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @mixin font-heading {

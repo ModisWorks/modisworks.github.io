@@ -3,6 +3,21 @@ layout: home
 title: "Home"
 ---
 
+<div class="youtube-player">
+    <iframe width='1400' height='824' onload="iframe_loaded(this)" src="https://www.youtube.com/embed/ZsT8oq5qN2M?&theme=dark&color=white&autohide=2&modestbranding=1&showinfo=0&rel=0" frameborder="0" allowtransparency="true"  allow="autoplay"></iframe>
+</div>
+
+<div class="blurb">
+    <p class="blurb-title">easy to host</p>
+    <p class="blurb-text">no prior experience in hosting needed</p>
+    <p class="blurb-title">easy to customise</p>
+    <p class="blurb-text">pick whichever modules you want, or write your own</p>
+    <p class="blurb-title">easy to understand</p>
+    <p class="blurb-text">modules are just like standalone discord bots, but in a much more streamlined format</p>
+</div>
+
+<iframe class="widget-discord" onload="iframe_loaded(this)" src="https://discordapp.com/widget?id=379959693306494979&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+
 ## Getting started
 
 Most Discord bots are hosted for you, and you add the bot to your server by simply clicking a link. However, anyone with access to the bot's authentication token is able to access all data that the bot can, including text and voice channels.
