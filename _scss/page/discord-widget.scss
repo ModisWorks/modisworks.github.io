@@ -78,10 +78,3 @@ iframe {
         height: calc(100% + #{$yt-border-width * 2});
     }
 }
-
-.blurb {
-    margin: 5em 2em;
-    
-    @include font-blurb;
-    text-align: center;
-}

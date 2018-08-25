@@ -3,27 +3,11 @@ layout: default
 ---
 
 <div>
-    <script type="text/javascript">
+    {{ content }}
+    
+    <script defer type="text/javascript">
         function iframe_loaded(frame) {
-            console.log("widget loaded");
-            $(frame).addClass("visible")
+            $(frame).addClass("visible");
         }
     </script>
-
-    <div class="youtube-player">
-        <iframe width='1400' height='824' onload="iframe_loaded(this)" src="https://www.youtube.com/embed/ZsT8oq5qN2M?&theme=dark&color=white&autohide=2&modestbranding=1&showinfo=0&rel=0" frameborder="0" allowtransparency="true" gesture="media"></iframe>
-    </div>
-
-    <div class="blurb">
-        <h1>easy to host</h1>
-        <h2>no prior experience in hosting needed</h2>
-        <h1>easy to customise</h1>
-        <h2>pick whichever modules you want, or write your own</h2>
-        <h1>easy to understand</h1>
-        <h2>modules are just like standalone discord bots, but in a much more streamlined format</h2>
-    </div>
-
-    <iframe class="widget-discord" onload="iframe_loaded(this)" src="https://discordapp.com/widget?id=379959693306494979&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
-
-    {{ content }}
 </div>
