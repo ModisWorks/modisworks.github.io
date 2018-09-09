@@ -46,15 +46,16 @@ To interact with global data, you will first need to import the database API wit
 
 * `data.edit(server, module_name, path, value)`
     * Under normal usage, this is the only function you should need.
-    * `server` (string of numbers ie. the server id): Select the server that you want to access the database for.
-    * `module_name` (string, name of your module): Select the module that you want to access the database for.
-    * `path` (list of strings): List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
-    * `value` (any variable): Set the value for the item you selected with `path`. You can set the value to another dict to expand the database.
+    * `server` **(string of numbers ie. the server id)**: Select the server that you want to access the database for.
+    * `module_name` **(string, name of your module)**: Select the module that you want to access the database for.
+    * `path` **(list of strings)**: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
+    * `value` **(any variable)**: Set the value for the item you selected with `path`. You can set the value to another dict to expand the database.
 * `cache`
     * This variable contains the entire volatile database. You can use this variable to access anything in the database, including API keys etc.
+    * If you edit this, don't forget to call `data.write()` afterwards if you want it to be permanent.
 * `data.get()`
     * Use this function to update the global volatile data from the `data.json` global non-volatile data file. This can be used, for example, to update the database after you've edited `data.json` externally.
 * `data.write(new_data=None)`
     * Use this function without any arguments to manually update `data.json` with the current volatile storage.
     * If you provide `new_data`, this function will replace both the volatile and non-volatile database with the object you provided.
-    * **This function should not be used under normal circumstances. You could accidentally delete the whole database!** Only use this if you know what you are doing and definitely need it.
+    * **The `new_data` argument should not be used under normal circumstances. You could accidentally delete the whole database!** Only use it if you know what you are doing and definitely need it.
