@@ -38,14 +38,14 @@ The internal commands API uses the `__info.py` file to add your module's command
 #### Permission integers
 Below is a table detailing how the permission integer affects the accessibility of that command:
 
-| Integer | Accessible by                              |
-| ------: | :----------------------------------------- |
-|    `-1` | @everyone                                  |
-|     `0` | Server owner only                          |
-|     `1` | Server owner + highest role                |
-|     `2` | Server owner + 2nd hightest role and above |
-|     `3` | Server owner + 3rd highest role and above  |
-|    `4+` | etc.                                       |
+| Integer | Accessible by                             |
+| ------: | :---------------------------------------- |
+|    `-1` | @everyone                                 |
+|     `0` | Server owner only                         |
+|     `1` | Server owner + highest role               |
+|     `2` | Server owner + 2nd highest role and above |
+|     `3` | Server owner + 3rd highest role and above |
+|    `4+` | etc.                                      |
 
 #### Permission strings
 Below is a list of all the permission strings you can use to define what Discord permission a user needs to have to use a command:
