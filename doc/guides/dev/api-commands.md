@@ -1,6 +1,8 @@
-# The Internal Commands API
+# The Commands API
 
-Modis' internal commands API is designed to streamline the module code by collating the handling of bot commands into one central module (`!core`), which then distributes the commands to their respective modules.
+The most common and familiar way to interact with bots in Discord is through bot commands. These commands are sent by users to text channels and usually consist of a prefix, root command, and arguments. The most common prefixes include `!`, `/` and `=`. Modis also supports auxiliary arguments that modify the root argument, which are prefixed with `-`. A command with all four elements may look like `!play -loop despacito`.
+
+Modis' internal commands API is designed to streamline the module code by collating the handling of bot commands into one central module (`!core`). The `!core` module then distributes the commands to their respective modules.
 
 With the internal commands API, you don't need to worry about implementing parsing, permissions, or auxiliary arguments into your code. You only need to define what commands and arguments your module can receive (and their default permission levels if you want) in the `__info.py` file, which acts like a header file of sorts for your module. Then, you can use an `on_command.py` event handler the same way you would use any of the discord.py event handlers.
 
