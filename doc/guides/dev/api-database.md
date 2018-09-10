@@ -63,7 +63,7 @@ To interact with global data, you will first need to import the database API wit
     * Use this function to manually update `data.cache` from `data.json`. This can be used, for example, to update the database after you've edited `data.json` externally.
     * This function is called automatically on Modis startup, and should not need to be called again unless you edit `data.json` externally.
 * `data.push(new_data=None)`
-    * Use this function without any arguments to manually update `data.json` with the current volatile storage.
-    * This function is called automatically when you call `data.edit()`, so you don't need to use it under normal circumstances.
+    * Use this function without any arguments to manually update `data.json` from `data.cache`.
+    * This function is called automatically when you call `data.edit()`, and should not be to be called manually under normal circumstances.
     * If you provide `new_data`, this function will replace both the volatile and non-volatile database with the object you provided.
     * **The `new_data` argument should not be used under normal circumstances. You could accidentally delete the whole database!** Only use it if you know what you are doing and definitely need it.
