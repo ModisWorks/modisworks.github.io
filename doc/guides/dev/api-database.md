@@ -57,11 +57,13 @@ To interact with global data, you will first need to import the database API wit
     * `path` **(list of strings)**: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
     * `value` **(any variable)**: Set the value for the item you selected with `path`. You can set the value to another dict to expand the database.
 * `data.cache`
-    * This variable contains the entire volatile database. You can use this variable to access anything in the database, including API keys etc.
+    * This variable contains the volatile database. You can use this variable to access anything in the database, including API keys etc.
     * If you edit this, don't forget to call `data.write()` afterwards if you want it to be permanent.
-* `data.get()`
-    * Use this function to update the global volatile data from the `data.json` global non-volatile data file. This can be used, for example, to update the database after you've edited `data.json` externally.
-* `data.write(new_data=None)`
+* `data.pull()`
+    * Use this function to manually update `data.cache` from `data.json`. This can be used, for example, to update the database after you've edited `data.json` externally.
+    * This function is called automatically on Modis startup, and should not need to be called again unless you edit `data.json` externally.
+* `data.push(new_data=None)`
     * Use this function without any arguments to manually update `data.json` with the current volatile storage.
+    * This function is called automatically when you call `data.edit()`, so you don't need to use it under normal circumstances.
     * If you provide `new_data`, this function will replace both the volatile and non-volatile database with the object you provided.
     * **The `new_data` argument should not be used under normal circumstances. You could accidentally delete the whole database!** Only use it if you know what you are doing and definitely need it.
