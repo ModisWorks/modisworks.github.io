@@ -44,13 +44,19 @@ Interacting with local data is just the same as how you would normally write mul
 
 To interact with global data, you will first need to import the database API with `from modis.tools import data`. Below is a list of functions and variables in the API and their uses:
 
+* `data.get(server, module_name, path)`
+    * Under normal usage, this and `data.write()` should be the only functions you need.
+    * `server` **(string of numbers ie. the server id)**: Select the server that you want to access the database for.
+    * `module_name` **(string, name of your module)**: Select the module that you want to access the database for.
+    * `path` **(list of strings)**: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
+    * Returns the item referred to by `path`.
 * `data.edit(server, module_name, path, value)`
-    * Under normal usage, this is the only function you should need.
+    * Under normal usage, this and `data.get()` should be the only functions you need.
     * `server` **(string of numbers ie. the server id)**: Select the server that you want to access the database for.
     * `module_name` **(string, name of your module)**: Select the module that you want to access the database for.
     * `path` **(list of strings)**: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
     * `value` **(any variable)**: Set the value for the item you selected with `path`. You can set the value to another dict to expand the database.
-* `cache`
+* `data.cache`
     * This variable contains the entire volatile database. You can use this variable to access anything in the database, including API keys etc.
     * If you edit this, don't forget to call `data.write()` afterwards if you want it to be permanent.
 * `data.get()`
