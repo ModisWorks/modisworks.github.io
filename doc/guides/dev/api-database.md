@@ -49,15 +49,15 @@ To interact with global data, you will first need to import the database API wit
     * Use this function to **retrieve an object from the database.**
     * `server` *(string of numbers ie. the server id)*: Select the server that you want to access the database for.
     * `module_name` *(string, name of your module)*: Select the module that you want to access the database for.
-    * `path` *(list of strings)*: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
+    * `path=None` *(list of strings)*: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
     * Returns the item referred to by `path`.
 * `data.edit(server, module_name, path, value)`
     * Under normal usage, **this and `data.get()` should be the only functions you need.**
     * Use this function to **store an object in the database.**
     * `server` *(string of numbers ie. the server id)*: Select the server that you want to access the database for.
     * `module_name` *(string, name of your module)*: Select the module that you want to access the database for.
-    * `path` *(list of strings)*: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
     * `value` *(any variable)*: Set the value for the item you selected with `path`. You can set the value to another dict to expand the database.
+    * `path=None` *(list of strings)*: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
 * `data.cache`
     * This variable caches `data.json` into RAM. You can use this variable to read and edit anything in the database, including API keys etc.
     * If you edit this, don't forget to call `data.write()` afterwards if you want it to be permanent.
