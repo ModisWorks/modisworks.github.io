@@ -45,7 +45,7 @@ Interacting with local data is just the same as how you would normally write mul
 To interact with global data, you will first need to import the database API with `from modis.tools import data`. Below is a list of functions and variables in the API and their uses:
 
 * `data.get(server, module_name, path)`
-    * Under normal usage, **this and `data.write()` should be the only functions you need.**
+    * Under normal usage, **this and `data.edit()` should be the only functions you need.**
     * Use this function to **retrieve an object from the database.**
     * `server` *(string of numbers ie. the server id)*: Select the server that you want to access the database for.
     * `module_name` *(string, name of your module)*: Select the module that you want to access the database for.
@@ -60,7 +60,7 @@ To interact with global data, you will first need to import the database API wit
     * `path=None` *(list of strings)*: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
 * `data.cache`
     * This variable caches `data.json` into RAM. You can use this variable to read and edit anything in the database, including API keys etc.
-    * If you edit this, don't forget to call `data.write()` afterwards if you want it to be permanent.
+    * If you edit this, don't forget to call `data.edit()` afterwards if you want it to be permanent.
 * `data.pull()`
     * Use this function to **manually update `data.cache` from `data.json`.** Use this if you updated `data.json` manually (eg. with an external editor).
     * This function is called automatically on Modis startup, and should not need to be called again unless you edit `data.json` externally.
