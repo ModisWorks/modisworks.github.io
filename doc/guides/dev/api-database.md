@@ -44,18 +44,28 @@ Interacting with local data is just the same as how you would normally write mul
 
 To interact with global data, you will first need to import the database API with `from modis.tools import data`. Below is a list of functions and variables in the API and their uses:
 
+* `data.get(server, module_name, path)`
+    * Under normal usage, **this and `data.write()` should be the only functions you need.**
+    * Use this function to **retrieve an object from the database.**
+    * `server` *(string of numbers ie. the server id)*: Select the server that you want to access the database for.
+    * `module_name` *(string, name of your module)*: Select the module that you want to access the database for.
+    * `path=None` *(list of strings)*: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
+    * Returns the item referred to by `path`.
 * `data.edit(server, module_name, path, value)`
-    * Under normal usage, this is the only function you should need.
-    * `server` **(string of numbers ie. the server id)**: Select the server that you want to access the database for.
-    * `module_name` **(string, name of your module)**: Select the module that you want to access the database for.
-    * `path` **(list of strings)**: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
-    * `value` **(any variable)**: Set the value for the item you selected with `path`. You can set the value to another dict to expand the database.
-* `cache`
-    * This variable contains the entire volatile database. You can use this variable to access anything in the database, including API keys etc.
+    * Under normal usage, **this and `data.get()` should be the only functions you need.**
+    * Use this function to **store an object in the database.**
+    * `server` *(string of numbers ie. the server id)*: Select the server that you want to access the database for.
+    * `module_name` *(string, name of your module)*: Select the module that you want to access the database for.
+    * `value` *(any variable)*: Set the value for the item you selected with `path`. You can set the value to another dict to expand the database.
+    * `path=None` *(list of strings)*: List of the dictionary keys that you want to traverse to arrive at the value you want to edit. If you choose a path that doesn't exist yet, the API will throw an exception.
+* `data.cache`
+    * This variable caches `data.json` into RAM. You can use this variable to read and edit anything in the database, including API keys etc.
     * If you edit this, don't forget to call `data.write()` afterwards if you want it to be permanent.
-* `data.get()`
-    * Use this function to update the global volatile data from the `data.json` global non-volatile data file. This can be used, for example, to update the database after you've edited `data.json` externally.
-* `data.write(new_data=None)`
-    * Use this function without any arguments to manually update `data.json` with the current volatile storage.
+* `data.pull()`
+    * Use this function to **manually update `data.cache` from `data.json`.** Use this if you updated `data.json` manually (eg. with an external editor).
+    * This function is called automatically on Modis startup, and should not need to be called again unless you edit `data.json` externally.
+* `data.push(new_data=None)`
+    * Use this function without any arguments to **manually update `data.json` from `data.cache`.** Use this if you updated `data.cache` manually (without using `data.edit()`).
+    * This function is called automatically when you call `data.edit()`, and should not need to be called manually under normal circumstances.
     * If you provide `new_data`, this function will replace both the volatile and non-volatile database with the object you provided.
-    * **The `new_data` argument should not be used under normal circumstances. You could accidentally delete the whole database!** Only use it if you know what you are doing and definitely need it.
+    * ***The `new_data` argument should not be used under normal circumstances. You could accidentally delete the whole database!*** Only use it if you know what you are doing and definitely need it.
