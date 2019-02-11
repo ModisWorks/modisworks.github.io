@@ -53,16 +53,18 @@ Below is a list of all the permission strings you can use to define what Discord
 | General Permissions     | Text Permissions       | Voice Permissions      |
 | :---------------------- | :--------------------- | :--------------------- |
 | `administrator`         | `send_messages`        | `connect`              |
-| `manage_server`         | `send_tts_messages`    | `speak`                |
-| `manage_roles`          | `manage_messages`      | `mute_members`         |
-| `manage_channels`       | `embed_links`          | `deafen_members`       |
-| `kick_members`          | `attach_files`         | `move_members`         |
-| `ban_members`           | `read_message_history` | `use_voice_activation` |
-| `create_instant_invite` | `mention_everyone`     |                        |
-| `change_nickname`       | `external_emojis`      |                        |
+| `view_audit_log`        | `send_tts_messages`    | `speak`                |
+| `manage_server`         | `manage_messages`      | `mute_members`         |
+| `manage_roles`          | `embed_links`          | `deafen_members`       |
+| `manage_channels`       | `attach_files`         | `use_members`          |
+| `kick_members`          | `read_message_history` | `use_voice_activity`   |
+| `ban_members`           | `mention_everyone`     | `priority_speaker`     |
+| `create_instant_invite` | `use_external_emojis`  |                        |
+| `change_nickname`       | `add_reactions`        |                        |
 | `manage_nicknames`      |                        |                        |
 | `manage_emojis`         |                        |                        |
 | `manage_webhooks`       |                        |                        |
+| `view_channels`         |                        |                        |
 
 ## Upcoming features
 
