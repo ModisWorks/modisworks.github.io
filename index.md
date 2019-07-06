@@ -20,6 +20,15 @@ title: "Home"
 
 ## Getting started
 
+### NOTICE - Modis is currently in the process of being updated to the latest version of discord.py.
+As of the 6th of July 2019, the modules `music`, `manager`, `chatbot`, and `decide` do not have functional builds; framework and the rest of the modules are working. Parts of this website are also outdated and don't reflect Modis 0.4 yet. If you're not experienced with programming it would be best to wait for a pre-release of 0.4 before getting Modis - you can join our Discord server for updates. Otherwise you can get the previous release version off the releases page, but be warned it is really outdated and difficult to install.
+
+We'll try and get 0.4 out as fast as we can! Sorry about the wait.
+
+*If you're experienced with Python and would like to help out with Modis development, please jump in the Discord and let us know!*
+
+---
+
 Most Discord bots are hosted for you, and you add the bot to your server by simply clicking a link. However, anyone with access to the bot's authentication token is able to access all data that the bot can, including text and voice channels.
 
 Of course, most bot developers will never abuse this, but for those who would like some peace of mind or are using Discord for sensitive data, the only solution is to go through a few more steps and host a bot yourself, so that only you have the bot's token. Modis is designed to be easily hosted by anyone willing to spare ten minutes or so, with no prior experience needed.
