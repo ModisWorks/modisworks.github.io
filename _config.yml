@@ -15,7 +15,7 @@ repository: ModisWorks/modisworks.github.io
 github_username: ModisWorks
 
 # Build settings
-markdown: kramdown
+markdown: CommonMarkGhPages
 theme: jekyll-theme-cayman
 # Analytics
 google_analytics: UA-105356258-2
