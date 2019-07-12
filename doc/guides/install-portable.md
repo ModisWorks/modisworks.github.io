@@ -52,10 +52,13 @@ Modis is currently running on Python 3.7.4. If you don't have this version of Py
 
 FFmpeg is required for Modis to use voice features of Discord (such as playing music with the `music` module). If you don't intend to use any modules that use voice functionality then you can skip this step.
 
-#### FFmpeg installation - Windows
-
+<details>
+    <summary>####FFmpeg installation - Windows</summary>
+    
 - FFmpeg is provided with Modis for Windows. No installation needed.
-    > If you are not using the provided Python venv, just get a build from [here](https://ffmpeg.zeranoe.com/builds/) and make sure that the folder containing ffmpeg.exe can be found in PATH.
+    > If you're not using the provided Python venv, just get a build from [here](https://ffmpeg.zeranoe.com/builds/) and make sure that the folder containing ffmpeg.exe can be found in PATH.
+</details>
+
 
 #### FFmpeg installation - OS X
 
@@ -64,7 +67,7 @@ FFmpeg is required for Modis to use voice features of Discord (such as playing m
 
 #### FFmpeg installation - Linux
 
-You know how
+You know how.
 
 # Installing Modis
 
