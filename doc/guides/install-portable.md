@@ -53,8 +53,9 @@ That's it! We don't need to install all the Python packages manually as they are
 <details>
     <summary>Python installation - Linux/Raspi</summary>
 
-- If you use Linux you don't need our help installing Python.
-- If you're installing Modis onto a Raspberry Pi (Raspbian), the process is a lot more involved and you will need to compile Python 3.7.4 yourself. We have a separate guide for [installing Modis on Raspbian](./install-raspi.md) that you should use instead of this one.
+If you use Linux you don't need our help installing Python.
+
+If you're installing Modis onto a Raspberry Pi (Raspbian), the process is a lot more involved and you will need to compile Python 3.7.4 yourself. We have a separate guide for [installing Modis on Raspbian](./install-raspi.md) that you should use instead of this one.
 </details>
 
 ### FFmpeg
@@ -64,8 +65,8 @@ FFmpeg is required for Modis to use voice features of Discord (such as playing m
 <details>
     <summary>FFmpeg installation - Windows</summary>
     
-- FFmpeg is provided with Modis for Windows. No installation needed.
-    > If you're not using the provided Python venv, just get a build from [here](https://ffmpeg.zeranoe.com/builds/) and make sure that the folder containing ffmpeg.exe can be found in PATH.
+FFmpeg is provided with Modis for Windows. No installation needed.
+> If you're not using the provided Python venv, just get a build from [here](https://ffmpeg.zeranoe.com/builds/) and make sure that the folder containing ffmpeg.exe can be found in PATH.
 </details>
 
 <details>
@@ -78,7 +79,7 @@ FFmpeg is required for Modis to use voice features of Discord (such as playing m
 <details>
     <summary>FFmpeg installation - Linux</summary>
 
-You know how.
+The usual.
 </details>
 
 ### Discord bot account
@@ -118,7 +119,7 @@ WIP
 </details>
 
 <details>
-    <summary>FFmpeg installation - Linux</summary>
+    <summary>Modis installation - Linux</summary>
 
 WIP
 </details>
