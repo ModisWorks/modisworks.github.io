@@ -31,27 +31,27 @@ If you're not sure how to get these, we've got a quick guide for each of them be
 Modis is currently running on Python 3.7.4. If you don't have this version of Python installed, check the guide for your OS below:
 
 <details>
-    <summary>#### Python installation - Windows</summary>
+    <summary><h4>Python installation - Windows</h4></summary>
 
-    1. Go to the [Python downloads page for Python 3.7.4](https://www.python.org/downloads/release/python-374/).
-    2. Scroll down a bit, and download the [Windows x86-64 executable installer](https://www.python.org/ftp/python/3.7.4/python-3.7.4-amd64.exe) if you're on 64-bit, or the [Windows x86 executable installer](https://www.python.org/ftp/python/3.7.4/python-3.7.4.exe) if you're on 32-bit. (You can also click those links to download them without going to the website)
-    3. Run the installer. **Check the box for `Add Python 3.7 to PATH`**.
-        > If you picked `Customize installation`, **check `Add Python to environment variables`** on the second options page.
+1. Go to the [Python downloads page for Python 3.7.4](https://www.python.org/downloads/release/python-374/).
+2. Scroll down a bit, and download the [Windows x86-64 executable installer](https://www.python.org/ftp/python/3.7.4/python-3.7.4-amd64.exe) if you're on 64-bit, or the [Windows x86 executable installer](https://www.python.org/ftp/python/3.7.4/python-3.7.4.exe) if you're on 32-bit. (You can also click those links to download them without going to the website)
+3. Run the installer. **Check the box for `Add Python 3.7 to PATH`**.
+    > If you picked `Customize installation`, **check `Add Python to environment variables`** on the second options page.
 </details>
 
 <details>
-    <summary>#### Python installation - OS X</summary>
+    <summary><h4>Python installation - OS X</h4></summary>
 
-    1. Open Terminal, paste the command `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` and press Enter to download [Homebrew](https://brew.sh/).
-        >Homebrew is a package manager for OS X. You don't have to use it, but it will make setting up Modis easier and we recommend getting it.
-    2. After Homebrew is installed, run `brew install python` in Terminal to install the latest version of Python.
+1. Open Terminal, paste the command `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` and press Enter to download [Homebrew](https://brew.sh/).
+    >Homebrew is a package manager for OS X. You don't have to use it, but it will make setting up Modis easier and we recommend getting it.
+2. After Homebrew is installed, run `brew install python` in Terminal to install the latest version of Python.
 </details>
 
 <details>
-    <summary>#### Python installation - Linux/Raspi</summary>
+    <summary><h4>Python installation - Linux/Raspi</h4></summary>
 
-    - If you use Linux you don't need our help installing Python.
-    - If you're installing Modis onto a Raspberry Pi (Raspbian), the process is a lot more involved and you will need to compile Python 3.7.4 yourself. We have a separate guide for [installing Modis on Raspbian](./install-raspi.md) that you should use instead of this one.
+- If you use Linux you don't need our help installing Python.
+- If you're installing Modis onto a Raspberry Pi (Raspbian), the process is a lot more involved and you will need to compile Python 3.7.4 yourself. We have a separate guide for [installing Modis on Raspbian](./install-raspi.md) that you should use instead of this one.
 </details>
 
 ### FFmpeg
@@ -59,23 +59,23 @@ Modis is currently running on Python 3.7.4. If you don't have this version of Py
 FFmpeg is required for Modis to use voice features of Discord (such as playing music with the `music` module). If you don't intend to use any modules that use voice functionality then you can skip this step.
 
 <details>
-    <summary>#### FFmpeg installation - Windows</summary>
+    <summary><h4>FFmpeg installation - Windows</h4></summary>
     
-    - FFmpeg is provided with Modis for Windows. No installation needed.
-        > If you're not using the provided Python venv, just get a build from [here](https://ffmpeg.zeranoe.com/builds/) and make sure that the folder containing ffmpeg.exe can be found in PATH.
+- FFmpeg is provided with Modis for Windows. No installation needed.
+    > If you're not using the provided Python venv, just get a build from [here](https://ffmpeg.zeranoe.com/builds/) and make sure that the folder containing ffmpeg.exe can be found in PATH.
 </details>
 
 <details>
-    <summary>#### FFmpeg installation - OS X</summary>
+    <summary><h4>FFmpeg installation - OS X</h4></summary>
 
-    1. Run `brew install ffmpeg --with-opus` in Terminal.
-    2. Restart your computer.
+1. Run `brew install ffmpeg --with-opus` in Terminal.
+2. Restart your computer.
 </details>
 
 <details>
-    <summary>#### FFmpeg installation - Linux</summary>
+    <summary><h4>FFmpeg installation - Linux</h4></summary>
 
-    You know how.
+You know how.
 </details>
 
 # Installing Modis
