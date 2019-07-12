@@ -21,7 +21,7 @@ title: "Home"
 ## Getting started
 
 ### NOTICE - Modis is currently in the process of being updated to the latest version of discord.py.
-As of the 6th of July 2019, the modules `music`, `manager`, `chatbot`, and `decide` do not have functional builds; framework and the rest of the modules are working. Parts of this website are also outdated and don't reflect Modis 0.4 yet. If you're not experienced with programming it would be best to wait for a pre-release of 0.4 before getting Modis - you can join our Discord server for updates. Otherwise you can get the previous release version off the releases page, but be warned it is really outdated and difficult to install.
+As of the 6th of July 2019, the modules `manager`, `chatbot`, and `decide` do not have functional builds; framework and the rest of the modules are working. Parts of this website are also either outdated or "future-dated" (written with unreleased stuff in mind). If you're not programming-savvy it would be best to wait for a pre-release of 0.4 before getting Modis - you can join our Discord server for updates. You can get the previous release version off the releases page, but be warned it is really outdated and difficult to install.
 
 We'll try and get 0.4 out as fast as we can! Sorry about the wait.
 
@@ -33,7 +33,7 @@ Most Discord bots are hosted for you, and you add the bot to your server by simp
 
 Of course, most bot developers will never abuse this, but for those who would like some peace of mind or are using Discord for sensitive data, the only solution is to go through a few more steps and host a bot yourself, so that only you have the bot's token. Modis is designed to be easily hosted by anyone willing to spare ten minutes or so, with no prior experience needed.
 
-**To get started hosting your own version of Modis, check out the [setup](./doc/guides/setup.md) guide.** If you run into any problems, don't hesitate to join our Discord server and ask!
+**To get started hosting your own version of Modis, check out the [setup](doc/guides/setup.md) guide.** If you run into any problems, don't hesitate to join our Discord server and ask!
 
 ## Premade modules
 
@@ -53,10 +53,10 @@ ModisWorks also develops 7 additional modules for you to have fun with:
 - `rocketleague` - Get your Rocket League rank and statistics in Discord.
 - `tableflip` - Anger management tool.
 
-More detailed information about each module can be found in the [Documentation](https://infraxion.github.io/modis/documentation/#modules).
+More detailed information about each module can be found in the [Documentation](doc/documentation.md).
 
 ## Custom modules
 
-One of Modis' core features is an internal "API" so to speak that makes writing custom modules very easy. If you have no prior experience with programming, don't worry - you can start learning right now and have a working module within 10 minutes! We've written a guide to get you started with a simple [Ping Pong Module](./doc/guides/ping-pong.md).
+One of Modis' core features is an internal "API" so to speak that makes writing custom modules very easy. If you have no prior experience with programming, don't worry - you can start learning right now and have a working module within 10 minutes! We've written a guide to get you started with a simple [Ping Pong Module](doc/guides/dev/pingpong.md).
 
 If you do have experience with discord.py, writing a module for Modis is exactly the same as writing a standalone Discord bot, but with all the event listeners neatly organised into seperate files. Writing Discord bots using the Modis platform streamlines the process and makes your code much more readable. The Modis internal API supports every event listener under the discord.py API, and you have full access to the `client` object to send messages or play audio. Style guides and code standards for Modis modules are coming soon.

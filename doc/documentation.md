@@ -6,20 +6,22 @@ permalink: /documentation/
 
 Documentation for Modis is still a work-in-progress.
 
-- [Events](./documentation/events.md)
 
 ## Modules
 
-- [BeTheBot](./documentation/modules/bethebot.md)
-- [Gamedeals](./documentation/modules/gamedeals.md)
-- [Help](./documentation/modules/help.md)
-- [Hex](./documentation/modules/hex.md)
-- [Manager](./documentation/modules/manager.md)
-- [Music](./documentation/modules/music.md)
-- [RocketLeague](./documentation/modules/rocketleague.md)
+### Core Modules
+- [`help`](documentation/modules/help.md)
+- [`manager`](documentation/modules/music.md)
+- [`music`](documentation/modules/music.md)
 
-## Troubleshooting
+### Other Modules
+- [`replies`](documentation/modules/replies.md)
+- [`bethebot`](documentation/modules/bethebot.md)
+- [`hex`](documentation/modules/hex.md)
+- [`reddit`](documentation/modules/reddit.md)
+- [`rocketleague`](documentation/modules/rocketleague.md)
+- [`tableflip`](documentation/modules/tableflip.md)
 
-If you're having problems, feel free to ask for help over in our Discord server!
+## Modis Internal API
 
-- [Troubleshooting](./documentation/troubleshooting.md)
+- [Events](documentation/events.md)

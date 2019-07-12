@@ -2,7 +2,7 @@
 title: Setup
 permalink: /guides/setup/
 ---
-# Installing Modis
+# Modis Quickstart
 
 ## Prerequisites
 
@@ -55,7 +55,7 @@ That's it! We don't need to install all the Python packages manually as they are
 
 If you use Linux you don't need our help installing Python.
 
-If you're installing Modis onto a Raspberry Pi (Raspbian), the process is a lot more involved and you will need to compile Python 3.7.4 yourself. We have a separate guide for [installing Modis on Raspbian](./install-raspi.md) that you should use instead of this one.
+If you're installing Modis onto a Raspberry Pi (Raspbian), the process is a lot more involved and you will need to compile Python 3.7.4 yourself. We have a separate guide for [installing Modis on Raspbian](setup-raspi.md) that you should use instead of this one.
 </details>
 
 ### FFmpeg
@@ -134,4 +134,4 @@ Once you've got Modis installed, here's a few things to take note of to get star
 
 ## Troubleshooting
 
-If have problems with getting Modis running, try the [Troubleshooting](./troubleshooting.md) section for FAQs. If you don't find a solution there, then feel free to join our Discord Server to ask your questions.
+If have problems with getting Modis running, try the [Troubleshooting](faq.md) section for FAQs. If you don't find a solution there, then feel free to join our Discord Server to ask your questions.
