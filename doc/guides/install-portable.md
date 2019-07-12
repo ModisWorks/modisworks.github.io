@@ -8,10 +8,7 @@ permalink: /guides/setup/
 
 If you want to run Modis for yourself you'll need:
 
-- Python 3.7.4
-- FFmpeg (If you want voice functionality eg. music player)
-- A Discord bot account token
-- The following Python packages:
+- Python 3.7.4, plus the following Python packages:
     - `discord.py`
     - `tkinter` - For the bot GUI
     - `PyGithub` - For the built-in module downloader
@@ -23,6 +20,8 @@ If you want to run Modis for yourself you'll need:
     - `requests` - For modules that use HTTP API calls
     - `lxml` - For modules that use HTTP API calls
     - `praw` - For the Reddit module
+- FFmpeg (If you want voice functionality eg. music player)
+- A Discord bot account token
 
 If you're not sure how to get these, we've got a quick guide for each of them below:
 
@@ -34,9 +33,12 @@ Modis is currently running on Python 3.7.4. If you don't have this version of Py
     <summary>Python installation - Windows</summary>
 
 1. Go to the [Python downloads page for Python 3.7.4](https://www.python.org/downloads/release/python-374/).
-2. Scroll down a bit, and download the [Windows x86-64 executable installer](https://www.python.org/ftp/python/3.7.4/python-3.7.4-amd64.exe) if you're on 64-bit, or the [Windows x86 executable installer](https://www.python.org/ftp/python/3.7.4/python-3.7.4.exe) if you're on 32-bit. (You can also click those links to download them without going to the website)
-3. Run the installer. **Check the box for `Add Python 3.7 to PATH`**.
+1. Scroll down a bit, and download the [Windows x86-64 executable installer](https://www.python.org/ftp/python/3.7.4/python-3.7.4-amd64.exe) if you're on 64-bit, or the [Windows x86 executable installer](https://www.python.org/ftp/python/3.7.4/python-3.7.4.exe) if you're on 32-bit. (You can also click those links to download them without going to the website)
+1. Run the installer. **Check the box for `Add Python 3.7 to PATH`**.
     > If you picked `Customize installation`, **check `Add Python to environment variables`** on the second options page.
+
+That's it! We don't need to install all the Python packages manually as they are included with the Modis for Windows download.
+> If you're not using the provided Python venv, just install all the requirements with pip like usual.
 </details>
 
 <details>
@@ -44,7 +46,8 @@ Modis is currently running on Python 3.7.4. If you don't have this version of Py
 
 1. Open Terminal, paste the command `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` and press Enter to download [Homebrew](https://brew.sh/).
     >Homebrew is a package manager for OS X. You don't have to use it, but it will make setting up Modis easier and we recommend getting it.
-2. After Homebrew is installed, run `brew install python` in Terminal to install the latest version of Python.
+1. After Homebrew is installed, run `brew install python` in Terminal to install the latest version of Python.
+1. Python packages WIP
 </details>
 
 <details>
@@ -69,7 +72,7 @@ FFmpeg is required for Modis to use voice features of Discord (such as playing m
     <summary>FFmpeg installation - OS X</summary>
 
 1. Run `brew install ffmpeg --with-opus` in Terminal.
-2. Restart your computer.
+1. Restart your computer.
 </details>
 
 <details>
@@ -78,30 +81,56 @@ FFmpeg is required for Modis to use voice features of Discord (such as playing m
 You know how.
 </details>
 
-# Installing Modis
+### Discord bot account
 
-Now that you have the basics done, you want to install Modis. First, you'll want to use pip to install Modis to install all the packages and requirements that Modis needs. In a command window, run `pip3 install modis --upgrade` to install the latest version of Modis. If everything goes well and there are no errors, then you can start making a file to launch Modis from.
+We need to create a bot account through which Modis which interact with your server. You've probably seen these before for other bots; they look just like normal accounts but with a blue `BOT` tag next to their username. If you don't know how to make a Discord bot account, follow these steps:
 
-# Using Modis
+1. Log in to Discord in your browser
+1. Go to the [My Apps](https://discordapp.com/developers/applications/me) section of the Discord developer's page (if you aren't logged in to Discord you'll need to do that as well).
+1. Click the blue `New Application` button on the top right.
+1. Give your bot a name (you can change it at any time) and click `Create`.
+1. Take note of the `CLIENT ID`; this is needed to create the invite link to invite your bot to servers. If you'd like to add a profile picture and description to your bot, you can do so now.
+1. On the left menu, go to the `Bot` tab.
+1. Click `Add Bot`, then `Yes, do it!`
+1. We suggest turning off `PUBLIC BOT` as it allows anyone with your bot's client ID to add your bot to their server without you knowing.
+1. Click `Click to Reveal Token` and take note of the token. **KEEP THIS TOKEN SECRET; it is equivalent to a PASSWORD. Always make sure your bot token is not visible when posting screenshots for help in the Modis Discord server**. Anyone with your bot token can do anything your bot has permission to do. For example, if the bot has admin permissions, they could **wipe your Discord server**.
 
-Modis is now fully installed, but you still need to make a way to run it. You'll need to make a Python file to run it. First: import the `modis` packages, then call `modis.gui` with your Discord Bot Token and Discord Bot Client ID.
+You should now have a `CLIENT ID` (username) and a `TOKEN` (password). We'll use these later, so keep them safe somewhere. If you'd like to add a profile picture and description to your bot, you can do so on the `General Information` tab.
 
-> If you don't know how to make your own Discord Bot, have a look at the [Making a Discord Bot](./api-keys.md#making-a-discord-bot) section for step-by-step instructions on getting the Discord token and client id.
+## Installing Modis
 
-The `launcher.py` file should look like this:
+Once you've got all the prerequisites sorted, follow the instructions for your OS below to download and install Modis:
 
-```python
-import modis
+<details>
+    <summary>Modis installation - Windows</summary>
+    
+1. Go to the [Modis Releases page](https://github.com/ModisWorks/modis/releases) and pick the flavour of Modis for Windows that you want.
+1. Unzip and chuck the contents in a folder somewhere.
 
-modis.gui()
-```
+That's it! Run `#START MODIS.bat` to start Modis.
+>Modis for Windows is *almost* completely portable; it'll work with full functionality on any Windows computer with Python 3.7.4 installed. You can move the folder wherever you like, whenever you like.
+</details>
 
-To run Modis now, just run `python launcher.py` from the directory that `launcher.py` is in.
+<details>
+    <summary>Modis installation - OS X</summary>
 
-> If you are running Modis on a system without `tkinter` installed, or just prefer not to use the GUI, you can change `modis.gui()` to `modis.console()` to start Modis without the GUI.
+WIP
+</details>
 
-# Troubleshooting
+<details>
+    <summary>FFmpeg installation - Linux</summary>
 
-If you still have problems, see the [Troubleshooting](../documentation/troubleshooting.md) section for solutions to some common problems. If you don't find a solution there, then feel free to join our Discord Server to ask your questions.
+WIP
+</details>
 
-*Guides for getting tokens for Discord bots, Reddit, and Google are coming soon.*
+## Using Modis
+
+Once you've got Modis installed, here's a few things to take note of to get started with hosting your bot:
+
+- To log your bot in, paste the bot `TOKEN` you got from earlier into the `Discord bot token` field, and click `Start Modis`.
+- To invite your bot to servers, paste the bot `CLIENT ID` you got from earlier into the field that says `Paste Client ID here for invite link`, then click `Invite bot to server`.
+- WIP
+
+## Troubleshooting
+
+If have problems with getting Modis running, try the [Troubleshooting](./troubleshooting.md) section for FAQs. If you don't find a solution there, then feel free to join our Discord Server to ask your questions.
