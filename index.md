@@ -20,12 +20,12 @@ title: "Home"
 
 ## Getting started
 
-### NOTICE - Modis is currently in the process of being updated to the latest version of discord.py.
-As of the 6th of July 2019, the modules `manager`, `chatbot`, and `decide` do not have functional builds; framework and the rest of the modules are working. Parts of this website are also either outdated or "future-dated" (written with unreleased stuff in mind). If you're not programming-savvy it would be best to wait for a pre-release of 0.4 before getting Modis - you can join our Discord server for updates. You can get the previous release version off the releases page, but be warned it is really outdated and difficult to install.
+### **NOTICE - Modis is currently in the process of being updated to the latest version of discord.py.**
+**As of the 6th of July 2019, the modules `manager`, `chatbot`, and `decide` do not have functional builds; framework and the rest of the modules are working. Parts of this website are also either outdated or "future-dated" (written with unreleased stuff in mind). If you're not programming-savvy it would be best to wait for a pre-release of 0.4 before getting Modis - you can join our Discord server for updates. You can get the previous release version off the releases page, but be warned it is really outdated and difficult to install.**
 
-We'll try and get 0.4 out as fast as we can! Sorry about the wait.
+**We'll try and get 0.4 out as fast as we can! Sorry about the wait.**
 
-*If you're experienced with Python and would like to help out with Modis development, please jump in the Discord and let us know!*
+***If you're experienced with Python and would like to help out with Modis development, please jump in the Discord and let us know!***
 
 ---
 
