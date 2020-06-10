@@ -2,8 +2,9 @@
 
 We have an experimental script available, please let us know over at Discord if it works.
 The script can be run using this command:
-    cd ~ ; wget modisworks.github.io/assets/sh/modis_rpi_install.sh ; bash modis_rpi_install.sh
-    
+```bash
+cd ~ ; wget modisworks.github.io/assets/sh/modis_rpi_install.sh ; bash modis_rpi_install.sh
+```
 <!--- ## Basics
 
 ```sh
